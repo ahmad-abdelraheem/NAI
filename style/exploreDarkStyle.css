@@ -1,0 +1,57 @@
+:root {
+    --dark-background: #06141d;
+    --light-background: #1b2730;
+    --lighter-background: #28343e;
+    --gray: #d9d9d938;
+    --white: #d9d9d9;
+    --main-color: #f403b8;
+    --darker-main: #830062;
+}
+body {
+    overflow-y: hidden;
+}
+.left-side {
+    position: inherit;
+}
+.trend-container {
+    background-color: var(--light-background);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: calc(100vw / 3);
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-y: auto !important;
+
+}
+.trend-container .trend-category {
+    border-bottom: solid 3px var(--gray);
+}
+.trend-container .trend-category:last-child {
+    border-bottom: none;
+}
+.trend-container .trend-category .trends {
+    gap: 10px;
+}
+.trend-container .trend-category .trend {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.trend-container .trend-category .trend .hashtag {
+    color: var(--main-color);
+}
+.trend-container .trend-category .trend .tweet-count {
+    color: var( --gray);
+    font-size: 16px;
+    padding-left: 20px;
+}
+main {
+    justify-content: flex-start;
+}
+main .new-feeds {
+    width: calc(100vw / 3 * 2);
+    height: calc(100vh - 150px);
+}

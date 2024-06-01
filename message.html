@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link id="main-style" rel="stylesheet" href="./style/homeDarkStyle.css">
+    <link rel="stylesheet" href="./style/messageDarkStyle.css">
+</head>
+<body style="overflow: hidden;">  
+    <div class="nav-bar">
+        <div class="brand">
+            <i class="bi bi-feather"></i>
+            <span>NAI</span>
+        </div>
+        <div class="links">
+            <a href="./index.html" class="link">
+                <i class="bi bi-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="./explore.html" class="link">
+                <i class="bi bi-eye"></i>
+                <span>Explore</span>
+            </a>
+            <a href="./message.html" class="link">
+                <i class="bi bi-chat-dots"></i>
+                <span>Messages</span>
+            </a>
+            <a href="./notification.html" class="link">
+                <i class="bi bi-bell"></i>
+                <span>Notification</span>
+            </a>
+            <a href="./profile.html" class="link">
+                <i class="bi bi-person"></i>
+                <span>profile</span>
+            </a>
+            <!-- <a href="./index.html" class="link">
+                <i class="bi bi-three-dots"></i>
+                <span>More</span>
+            </a> -->
+        </div>
+        <div class="search-bar">
+            <form action="" method="get"><input type="text" name="search" id="search-box" placeholder='serach' autocomplete="off"></form>
+        </div>
+    </div>
+
+    <main>
+        <div class="convarsation">
+            <div class="contact">
+                <img src="./img/profileImg1.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name unread">Angela Doe</span>
+                    <span class="last-message unread">it's sound great</span>
+                </div>
+                <div class="details">
+                    <span class="date-time unread">10:39PM</span>
+                    <span class="short-unread-count">1</span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg2.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name unread">John Doe</span>
+                    <span class="last-message unread">I will be there</span>
+                </div>
+                <div class="details">
+                    <span class="date-time unread">yesterday</span>
+                    <span class="short-unread-count">2</span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg3.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name">Mariam Khalel</span>
+                    <span class="last-message">check up your email</span>
+                </div>
+                <div class="details">
+                    <span class="date-time">yesterday</span>
+                    <span class="empty-unread-count"></span>
+                </div>
+            </div>
+            <div class="contact">
+                <img src="./img/profileImg4.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name">Bill Gates</span>
+                    <span class="last-message">Me: missed call</span>
+                </div>
+                <div class="details">
+                    <span class="date-time">Wednesday</span>
+                    <span class="empty-unread-count"></span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg6.jpg" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name unread">Amer Sadeq</span>
+                    <span class="last-message unread">Please call me ASAP</span>
+                </div>
+                <div class="details">
+                    <span class="date-time unread">Thuesday</span>
+                    <span class="long-unread-count">11</span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg7.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name">Patrica Olmert</span>
+                    <span class="last-message">it's ok darling</span>
+                </div>
+                <div class="details">
+                    <span class="date-time">Thuesday</span>
+                    <span class="empty-unread-count"></span>
+                </div>
+            </div>
+            <div class="contact">
+                <img src="./img/profileImg8.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name">Mo Ibrahim</span>
+                    <span class="last-message">I will do my best, dont worry.</span>
+                </div>
+                <div class="details">
+                    <span class="date-time">Monday</span>
+                    <span class="empty-unread-count"></span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg9.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name unread">Adam</span>
+                    <span class="last-message unread">I am busy now, call me later</span>
+                </div>
+                <div class="details">
+                    <span class="date-time unread">Sunday</span>
+                    <span class="short-unread-count">1</span>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./img/profileImg10.png" alt="" class="profile-img">
+                <div class="middle">
+                    <span class="contact-name">Julia Mark</span>
+                    <span class="last-message">Never Mind</span>
+                </div>
+                <div class="details">
+                    <span class="date-time">14/5/2024</span>
+                    <span class="empty-unread-count"></span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-section">
+            <div class="chat-header">
+                <div class="contact-details">
+                    <img src="./img/profileImg4.png" alt="" class="profile-img">
+                    <span class="profile-name">Bill Gates</span>
+                </div>
+                <div class="chat-action">
+                    <button id="call-btn" class="icon-btn"><i class="bi bi-telephone"></i></button>
+                    <button id="more-btn" class="icon-btn"><i class="bi bi-three-dots-vertical"></i></button>
+                </div>
+            </div>
+            <div class="message-pool" id="msg-pool">
+                <div class="msg rec-msg">
+                    <span class="msg-content">Hi</span>
+                    <span class="msg-time">10:39PM</span>
+                </div>
+                <div class="msg sent-msg">
+                    <span class="msg-content">Hello</span>
+                    <span class="msg-time">10:41PM</span>
+                </div>
+                <div class="msg rec-msg">
+                    <span class="msg-content">I am looking for a developer, are you intrested?</span>
+                    <span class="msg-time">10:42PM</span>
+                </div>
+                <div class="msg sent-msg">
+                    <span class="msg-content">May I am, what are you looking for exactly?</span>
+                    <span class="msg-time">10:42PM</span>
+                </div>
+                <div class="msg rec-msg">
+                    <span class="msg-content">I have a great idea, I want to build an Operating System that interact using windows and icons.</span>
+                    <span class="msg-time">10:43PM</span>
+                </div>
+                <div class="msg sent-msg">
+                    <span class="msg-content">I am sure this idea will fall, it's discusting.</span>
+                    <span class="msg-time">10:44PM</span>
+                </div>
+                <div class="call-hestory">
+                    <div class="call-body">
+                        <div class="call-icon"><i class="bi bi-telephone-outbound" ></i></div>
+                        <div class="call-details">
+                            <span class="call-type">Voice Call</span>
+                            <div class="call-status">No Answer</div>
+                        </div>
+                    </div>
+                    <span class="call-time">12:40AM</span>
+                </div>
+                <div class="call-hestory sent-call-hestory">
+                    <div class="call-body">
+                        <div class="call-icon"><i class="bi bi-telephone-outbound" ></i></div>
+                        <div class="call-details">
+                            <span class="call-type">Voice Call</span>
+                            <div class="call-status">No Answer</div>
+                        </div>
+                    </div>
+                    <span class="call-time">12:40AM</span>
+                </div>
+            </div>
+            <div class="message-input">
+                <input type="text" name="new-msg" id="new-msg" placeholder="type a message" autocomplete="off">
+                <button id="send-btn"><i class="bi bi-send"></i></button>
+            </div>
+        </div>
+    </main>
+    <div class="calling hide-call" id="call-screen">
+        <img src="./img/profileImg4.png" alt="" class="profile-img-lg">
+        <div class="contact-name">Bill Gates</div>
+        <div class="status">
+            <div id="status-icon"><i class="bi bi-telephone"></i></div>
+            <span id="call-status">connecting</span>
+        </div>
+        <div class="call-action">
+            <button class="icon-btn" id="mute-btn"><!--<i class="bi bi-mic-mute"></i>--><i class="bi bi-mic-mute"></i></button>
+            <button class="icon-btn" id="video-btn"><i class="bi bi-camera-video-off"></i></button>
+            <button class="icon-btn" id="hangout-btn"><i class="bi bi-telephone-x"></i></button>
+        </div>
+    </div>
+    <script src="./js/msg.js"></script>
+    <script src="./js/call.js"></script>
+</body>
+</html>

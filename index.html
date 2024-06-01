@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link id="main-style" rel="stylesheet" href="./style/homeDarkStyle.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand">
+            <i class="bi bi-feather"></i>
+            <span>NAI</span>
+        </div>
+        <div class="links">
+            <a href="./index.html" class="link">
+                <i class="bi bi-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="./explore.html" class="link">
+                <i class="bi bi-eye"></i>
+                <span>Explore</span>
+            </a>
+            <a href="./message.html" class="link">
+                <i class="bi bi-chat-dots"></i>
+                <span>Messages</span>
+            </a>
+            <a href="./index.html" class="link">
+                <i class="bi bi-bell"></i>
+                <span>Notification</span>
+            </a>
+            <a href="./index.html" class="link">
+                <i class="bi bi-person"></i>
+                <span>profile</span>
+            </a>
+            <!-- <a href="./index.html" class="link">
+                <i class="bi bi-three-dots"></i>
+                <span>More</span>
+            </a> -->
+        </div>
+        <div class="search-bar">
+            <form action="" method="get"><input type="text" name="search" id="search-box" placeholder='serach' autocomplete="off"></form>
+        </div>
+    </div>
+    <div class="left-side">
+        <div class="profile">
+            <img src="./img/profileImg.jpg" alt="">
+            <h3>Ahmad Abdelraheem</h3>
+            <span id="user-name">@ahmadabdelraheem</span>
+            <div class="location"><i class="bi bi-geo-alt"></i><span>Amman, Jordan</span></div>
+            <div class="analytics">
+                <div class="record">
+                    <span class="record-header">Tweets</span>
+                    <span class="record-value">48</span>
+                </div>
+                <div class="record">
+                    <span class="record-header">Followers</span>
+                    <span class="record-value">589K</span>
+                </div>
+                <div class="record">
+                    <span class="record-header">Following</span>
+                    <span class="record-value">107</span>
+                </div>
+            </div>
+        </div>
+        <div class="recommendation">
+            <h3>Suggest to follow</h3>
+            <div class="account">
+                <img src="./img/amazon.png" class="profile-img" alt="">
+                <div class="names">
+                    <span class="name">Amazon</span>
+                    <span class="user-name">@amazonJO</span>
+                </div>
+                <button class="btn btn-follow">+ Follow</button>
+            </div>
+            <div class="account">
+                <img src="./img/google.png" class="profile-img" alt="">
+                <div class="names">
+                    <span class="name">Google</span>
+                    <span class="user-name">@googleJO</span>
+                </div>
+                <button class="btn btn-follow">+ Follow</button>
+            </div>
+            <div class="account">
+                <img src="./img/ahu.jpg" class="profile-img" alt="">
+                <div class="names">
+                    <span class="name">AHU</span>
+                    <span class="user-name">@AHU_JO</span>
+                </div>
+                <button class="btn btn-follow">+ Follow</button>
+            </div>
+        </div>
+        
+    </div>
+    <main>  
+        <div class="new-feeds">
+            <div id="start" style="margin-bottom:-20px"></div>
+
+            <div class="new-post">
+                <img src="./img/profileImg.jpg" class="profile-img" alt="">
+                <form class="post-box" action="" method="get" oncontextmenu="test()">  <!-- Must be post, its temprorally 'get' for testing purposes -->
+                    <textarea name="new-post" id="new-post" placeholder="What's happening?" rows="3"></textarea>
+                    <div class="buttons">
+                        <div class="attachmentS">
+                            <i class="bi bi-image"></i>
+                            <i class="bi bi-film"></i>
+                            <i class="bi bi-calendar"></i>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <input type="submit" value="post" class="btn btn-main" id="post-btn" >
+                    </div>
+                </form>
+            </div>
+            <div class="feeds">
+                
+                <div class="post" id="posts">
+                    <div class="post-header">
+                        <img src="./img/profileImg2.png" alt="" class="profile-img">
+                        <span class="account-name">John Doe</span>
+                        <span class="user-name">@Mr_John</span>
+                        <span class="time">&bull;2 hours ago</span>
+                    </div>
+                    <div class="post-content">
+                        <p>This platform is relly awesome !!! I wish if it was real.</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- #####################################################################################################################
+                    ############################################################################################################-->
+                
+                
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./img/profileImg1.png" alt="" class="profile-img">
+                        <span class="account-name">Angela Doe</span>
+                        <span class="user-name">@Angela_doe</span>
+                        <span class="time">&bull;yesterday</span>
+                    </div>
+                    <div class="post-content">
+                        No one is born hating another person because of the color of his skin or his background or his religion...
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./img/profileImg3.png" alt="" class="profile-img">
+                        <span class="account-name">Mariam Khalel</span>
+                        <span class="user-name">@Mariam_kh</span>
+                        <span class="time">&bull;yesterday</span>
+                    </div>
+                    <div class="post-content">
+                        this is what happens when you don't recycle your pizza boxes
+                        <img src="./img/postImg.jpeg" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./img/profileImg.jpg" alt="" class="profile-img">
+                        <span class="account-name">Ahmad Abdelraheem</span>
+                        <span class="user-name">@ahmadabdelraheem</span>
+                        <span class="time">&bull;yesterday</span>
+                    </div>
+                    <div class="post-content">
+                        Nice, but I’m breaking the cycle with not having children.
+                        <img src="./img/postImg2.jpeg" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./img/openAI.png" alt="" class="profile-img">
+                        <span class="account-name">openAI <i class="bi bi-patch-check-fill" style="color: var(--main-color) !important;"></i></span>
+                        <span class="user-name">@opeiAI_official</span>
+                        <span class="time">&bull;2 days ago</span>
+                    </div>
+                    <div class="post-content">
+                        Unbeliveable! #DALLE #DALLE2
+                        <img src="./img/Screenshot 2024-05-27 163857.png" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./img/profileImg4.png" alt="" class="profile-img">
+                        <span class="account-name">Bill Gates</span>
+                        <span class="user-name">@billgates <i class="bi bi-patch-check-fill" style="color: var(--main-color) !important;"></i></span>
+                        <span class="time">&bull;2 hours ago</span>
+                    </div>
+                    <div class="post-content">
+                        A popular #COVID lockdown hobby: Growing your own coffee houseplant! #PlantBasedFuture #indoorplants
+                        <img src="./img/postImg3.jpeg" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <div class="loves" onclick="like(this)">
+                            <i class="bi bi-heart"></i>
+                            <span>36K</span>
+                        </div>
+                        <div class="comments">
+                            <i class="bi bi-chat-left"></i>
+                            <span>20.5K</span>
+                        </div>
+                        <div class="repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>481K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin: 10px 0px; height:100px; display:flex; flex-direction:column; align-items:center;">
+                    <h1>Thats it, follow more to get more.</h1>
+                    <a href="#start"><i class="bi bi-arrow-up-circle" style="font-size:40px !important; color: var(--main-color);"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="right-side">
+        <div class="trends">
+            <h1>Trend for you</h1>
+            <div class="trends-card">
+                <span class="card-header">TRENDS IN JORDAN</span> 
+                <div class="trend">
+                    <span class="tag">#JO_78</span>
+                    <span class="count">2 196 tweets</span>
+                </div>   
+                <div class="trend">
+                    <span class="tag">#Independence_Day_78</span>
+                    <span class="count">80K tweets</span>
+                </div>    
+            </div>
+            <div class="trends-card">
+                <span class="card-header">MAY INTEREST YOU</span> 
+                <div class="trend">
+                    <span class="tag">#Hala_Madrid</span>
+                    <span class="count">2M tweets</span>
+                </div>   
+                <div class="trend">
+                    <span class="tag">#UCL24</span>
+                    <span class="count">17M tweets</span>
+                </div>   
+                <div class="trend">
+                    <span class="tag">#Lionel_Messi</span>
+                    <span class="count">19K tweets</span>
+                </div>   
+            </div>
+            <a href="./trends.html">SHOW MORE</a>
+        </div>
+        <div class="log-out">
+            <form action="./login.html" method="get">
+                <button type="submit" class="btn" value="logout">Log out</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("contextmenu", disableContextMenu);
+    </script>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
